@@ -6,15 +6,15 @@
 /*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 15:51:06 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/09 16:07:34 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/10/20 10:56:20 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-    if ((c >= '0' && c <= '9'))
-        return (c);
-    return (0);
+	if ((c >= '0' && c <= '9'))
+		return (c);
+	return (0);
 }
 /*#include <stdio.h>
 #include <ctype.h>

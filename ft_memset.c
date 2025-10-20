@@ -1,26 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/09 16:21:50 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/20 10:57:03 by lmoreau          ###   ########.fr       */
+/*   Created: 2025/10/20 11:28:51 by lmoreau           #+#    #+#             */
+/*   Updated: 2025/10/20 12:09:57 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stddef.h>
 
-int	ft_isprint(int c)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	if (c >= 32 && c <= 126)
-		return (c);
-	return (0);
+	unsigned char	*p;
+
+	p = (unsigned char *)s;
+	while (n--)
+	{
+		*p++ = (unsigned char)c;
+	}
+	return (s);
 }
 /*#include <stdio.h>
-#include <ctype.h>
+#include <string.h>
 int main()
 {
-	printf("%d\n", ft_isprint(31));
-	printf("%d\n", isprint(31));
+	int i;
+	char buffer[20];
+
+	i = 0;
+	ft_memset(buffer, 'A', sizeof(buffer));
+	buffer[sizeof(buffer) - 1] = '\0';
+	printf("%s\n", buffer);
 	return 0;
 }*/
