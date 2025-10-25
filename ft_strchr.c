@@ -6,11 +6,12 @@
 /*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 08:07:39 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/25 08:33:11 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/10/25 09:02:31 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+
 char	*ft_strchr(const char *s, int c)
 {
 	int	i;

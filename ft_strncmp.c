@@ -1,40 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/25 08:33:21 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/25 09:02:09 by lmoreau          ###   ########.fr       */
+/*   Created: 2025/10/25 08:43:38 by lmoreau           #+#    #+#             */
+/*   Updated: 2025/10/25 09:02:38 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stddef.h>
 
-char	*ft_strrchr(const char *s, int c)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int			i;
-	const char	*last;
+	int	i;
 
 	i = 0;
-	last = NULL;
-	while (s[i] != '\0')
-	{
-		if (s[i] == (char)c)
-			last = &s[i];
+	while (i < n && s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
 		i++;
-	}
-	if ((char)c == '\0')
-		return ((char *)&s[i]);
-	return ((char *)last);
+	if (i == n)
+		return (0);
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
 /*#include <stdio.h>
 int main()
 {
-	char s[100] = "Bonjour";
-	int c = 'o';
-	printf("%s\n", ft_strrchr(s, c));
+	char s1[100] = "Chati";
+	char s2[100] = "Chat";
+	size_t n = 6;
+	printf("%d\n", ft_strncmp(s1, s2, n));
 	return 0;
 }*/
