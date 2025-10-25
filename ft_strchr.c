@@ -1,44 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/23 10:41:17 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/25 08:00:24 by lmoreau          ###   ########.fr       */
+/*   Created: 2025/10/25 08:07:39 by lmoreau           #+#    #+#             */
+/*   Updated: 2025/10/25 08:33:11 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+#include <stdlib.h>
+char	*ft_strchr(const char *s, int c)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
-	while (src[i])
-		i++;
-	if (size == 0)
-		return (1);
-	i = 0;
-	while (src[i] != 0 && i < size - 1)
+	while (s[i] != '\0')
 	{
-		dst[i] = src[i];
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
 		i++;
 	}
-	dst[i] = 0;
-	return (i);
+	if ((char)c == '\0')
+		return ((char *)&s[i]);
+	return (NULL);
 }
-
 /*#include <stdio.h>
-
 int main()
 {
-	char a[100];
-	char b[] = "Bonjour";
-	size_t size = 10;
-	ft_strlcpy(a,b,size);
-	printf("%s\n", a);
+	char s[100] = "Bonjour";
+	int c = 'n';
+	printf("%s\n", ft_strchr(s, c));
 	return 0;
 }*/

@@ -1,44 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/23 10:41:17 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/25 08:00:24 by lmoreau          ###   ########.fr       */
+/*   Created: 2025/10/25 07:46:58 by lmoreau           #+#    #+#             */
+/*   Updated: 2025/10/25 07:59:45 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+int	ft_toupper(int c)
 {
-	size_t	i;
-
-	i = 0;
-	while (src[i])
-		i++;
-	if (size == 0)
-		return (1);
-	i = 0;
-	while (src[i] != 0 && i < size - 1)
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = 0;
-	return (i);
+	if (c >= 97 && c <= 122)
+		c -= 32;
+	return (c);
 }
 
 /*#include <stdio.h>
-
 int main()
 {
-	char a[100];
-	char b[] = "Bonjour";
-	size_t size = 10;
-	ft_strlcpy(a,b,size);
-	printf("%s\n", a);
+	int c;
+	c = 123;
+	printf("%d\n", ft_toupper(c));
 	return 0;
 }*/
