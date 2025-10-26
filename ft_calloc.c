@@ -1,33 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 10:06:31 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/26 16:08:08 by lmoreau          ###   ########.fr       */
+/*   Created: 2025/10/26 15:51:45 by lmoreau           #+#    #+#             */
+/*   Updated: 2025/10/26 16:52:01 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include <stdlib.h>
 
-size_t	ft_strlen(char *str)
+void	ft_bzero(void *s, size_t n)
 {
-	size_t	i;
+	unsigned char	*p;
 
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
+	p = (unsigned char *)s;
+	while (n--)
+		*p++ = 0;
+}
+
+void	*ft_calloc(size_t nmemb, size_t size)
+{
+	void	*new;
+
+	new = (void *) malloc(nmemb * size);
+	if (!new)
+		return (NULL);
+	ft_bzero(new, nmemb * size);
+	return (new);
 }
 
 // #include <stdio.h>
-// int main()
-// {
-// 	char a[] = "Bonjour";
-// 	printf("%ld\n", ft_strlen(a));
+// int main() {
+// 	char *a = (char *) ft_calloc(5, sizeof(char));
+// 	if (!a)
+// 		return 1;
+// 	a[0] = 'c';
+// 	printf("%c\n", a[0]);
 // 	return 0;
 // }
