@@ -6,11 +6,11 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 09:22:05 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 09:32:43 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/10/27 13:09:31 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

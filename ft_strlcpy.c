@@ -6,11 +6,11 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 10:41:17 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 09:33:22 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/10/27 13:11:31 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

@@ -6,11 +6,11 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 08:33:21 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 09:33:40 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/10/27 13:11:51 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

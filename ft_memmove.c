@@ -6,11 +6,11 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 11:09:53 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 09:32:57 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/10/27 13:09:59 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

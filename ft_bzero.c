@@ -6,11 +6,11 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 09:31:54 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 09:34:18 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/10/27 13:09:00 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

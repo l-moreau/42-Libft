@@ -6,18 +6,18 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 10:06:31 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 10:13:38 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/10/27 13:11:35 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
-size_t	ft_strlen(const char *str)
+size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
 	i = 0;
-	while (str[i])
+	while (s[i])
 	{
 		i++;
 	}
