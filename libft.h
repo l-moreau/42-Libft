@@ -6,17 +6,18 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 16:44:03 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 13:21:00 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/10/27 14:28:53 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <stddef.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
+# include <stddef.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <fcntl.h>
+
 int		ft_atoi(const char *nptr);
 void	ft_bzero(void *s, size_t n);
 size_t	ft_strlen(const char *s);
