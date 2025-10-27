@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
+/*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/09 11:47:28 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/20 11:28:13 by lmoreau          ###   ########.fr       */
+/*   Created: 2025/10/27 09:31:40 by lmoreau           #+#    #+#             */
+/*   Updated: 2025/10/27 09:34:13 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,11 @@ int	ft_atoi(const char *nptr)
 	}
 	return (res * moins);
 }
-/*#include <stdio.h>
-int main()
-{
-	const char *str = "   -1234abc";
-	int num = ft_atoi(str);
-	printf("%d\n", num);
-	return 0;
-}*/
+// #include <stdio.h>
+// int main()
+// {
+// 	const char *str = "   -1234abc";
+// 	int num = ft_atoi(str);
+// 	printf("%d\n", num);
+// 	return 0;
+// }
