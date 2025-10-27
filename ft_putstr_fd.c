@@ -1,33 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 10:06:31 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 10:13:38 by lmoreau          ###   ########.fr       */
+/*   Created: 2025/10/27 11:52:22 by lmoreau           #+#    #+#             */
+/*   Updated: 2025/10/27 12:17:12 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <unistd.h>
 
-size_t	ft_strlen(const char *str)
+void	ft_putstr_fd(char *s, int fd)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
-	while (str[i])
+	if (fd != -1)
 	{
-		i++;
+		while (s[i])
+		{
+			write(fd, &s[i], 1);
+			i++;
+		}
 	}
-	return (i);
 }
 
-// #include <stdio.h>
 // int main()
 // {
-// 	char a[] = "Bonjour";
-// 	printf("%ld\n", ft_strlen(a));
+// 	char c[100] = "Helloooo";
+// 	int fd;
+// 	fd = open("seal", O_WRONLY);
+// 	ft_putstr_fd(c, fd);
 // 	return 0;
 // }

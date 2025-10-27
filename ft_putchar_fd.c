@@ -1,33 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 10:06:31 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 10:13:38 by lmoreau          ###   ########.fr       */
+/*   Created: 2025/10/27 11:21:01 by lmoreau           #+#    #+#             */
+/*   Updated: 2025/10/27 12:17:17 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <unistd.h>
 
-size_t	ft_strlen(const char *str)
+void	ft_putchar_fd(char c, int fd)
 {
-	size_t	i;
-
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
+	if (fd != -1)
+		write(fd, &c, 1);
 }
 
-// #include <stdio.h>
 // int main()
 // {
-// 	char a[] = "Bonjour";
-// 	printf("%ld\n", ft_strlen(a));
+// 	char c = 'c';
+// 	int fd;
+// 	fd = open("seal", O_WRONLY);
+// 	ft_putchar_fd(c, fd);
 // 	return 0;
 // }
