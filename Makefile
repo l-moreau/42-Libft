@@ -38,6 +38,7 @@ SRC := $/ft_atoi.c\
 		$/ft_putnbr.c\
 		$/ft_putendl_fd.c\
 		$/ft_strmapi.c\
+		$/ft_striteri.c\
 
 CFLAGS := -Wall -Werror -Wextra
 
