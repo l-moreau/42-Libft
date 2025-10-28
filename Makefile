@@ -30,7 +30,14 @@ SRC := $/ft_atoi.c\
 		$/ft_strnstr.c\
 		$/ft_strrchr.c\
 		$/ft_tolower.c\
-		$/ft_toupper.c
+		$/ft_toupper.c\
+		$/ft_strjoin.c\
+		$/ft_substr.c\
+		$/ft_putchar_fd\
+		$/ft_putstr_fd\
+		$/ft_putnbr.c\
+		$/ft_putendl_fd.c\
+		$/ft_strmapi.c\
 
 CFLAGS := -Wall -Werror -Wextra
 

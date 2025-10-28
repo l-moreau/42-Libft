@@ -1,46 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/23 10:41:17 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/28 09:53:33 by lmoreau          ###   ########.fr       */
+/*   Created: 2025/10/28 09:29:54 by lmoreau           #+#    #+#             */
+/*   Updated: 2025/10/28 11:19:39 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+void	ft_putendl_fd(char *s, int fd)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
-	while (src[i])
-		i++;
-	if (size == 0)
-		return (i);
-	i = 0;
-	if (size > 0)
+	if (fd != -1)
 	{
-		while (src[i] != 0 && i < size - 1)
+		while (s[i] != '\0')
 		{
-			dst[i] = src[i];
+			write(fd, &s[i], 1);
 			i++;
 		}
+		write(fd, "\n", 1);
 	}
-	dst[i] = 0;
-	return (i);
 }
-
-/*#include <stdio.h>
-int main()
-{
-	char a[100];
-	char b[] = "Bonjour";
-	size_t size = 3;
-	ft_strlcpy(a,b,size);
-	printf("%s\n", a);
-	return 0;
-}*/
+// int main()
+// {
+// 	char c[100] = "Coycou";
+// 	int fd;
+// 	fd = open("seal", O_WRONLY);
+// 	ft_putendl_fd(c, fd);
+// 	return 0;
+// }
