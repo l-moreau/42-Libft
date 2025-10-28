@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 15:51:58 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 13:23:16 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/10/28 09:25:29 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ char	*ft_strdup(const char *s)
 	dup = (char *) malloc((len + 1) * sizeof(char));
 	if (!dup)
 		return (NULL);
+	i = 0;
 	while (s[i])
 	{
 		dup[i] = s[i];
