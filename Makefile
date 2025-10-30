@@ -27,7 +27,7 @@ SRC := $/ft_atoi.c\
 		$/ft_strlcpy.c\
 		$/ft_strlen.c\
 		$/ft_strncmp.c\
-		$/ft_strnstr.c\
+		$/ft_strnstr.cchar	*ft_strtrim(char const *s1, char const *set)
 		$/ft_strrchr.c\
 		$/ft_tolower.c\
 		$/ft_toupper.c\
@@ -40,6 +40,7 @@ SRC := $/ft_atoi.c\
 		$/ft_strmapi.c\
 		$/ft_striteri.c\
 		$/ft_strtrim.c\
+		$/ft_split.c\
 
 
 CFLAGS := -Wall -Werror -Wextra

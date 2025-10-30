@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 16:44:03 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/30 10:27:29 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/10/30 10:30:32 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,5 +55,6 @@ void	ft_putendl_fd(char *s, int fd);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strtrim(char const *s1, char const *set);
+char **ft_split(char const *s, char c);
 
 #endif

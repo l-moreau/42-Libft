@@ -1,46 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/23 10:41:17 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/30 11:47:04 by lmoreau          ###   ########.fr       */
+/*   Created: 2025/10/30 10:46:46 by lmoreau           #+#    #+#             */
+/*   Updated: 2025/10/30 12:22:12 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+char	*ft_itoa(int n)
 {
-	size_t	i;
+	const char	*s_len;
+	char		s_bis;
 
-	i = 0;
-	while (src[i])
-		i++;
-	if (size == 0)
-		return (i);
-	i = 0;
-	if (size > 0)
-	{
-		while (src[i] != 0 && i < size - 1)
-		{
-			dst[i] = src[i];
-			i++;
-		}
-	}
-	dst[i] = 0;
-	return (i);
+	s_len = ft_strlen((const char *)n);
+	s_bis = malloc(s_len * (sizeof (char)));
 }
 
-/*#include <stdio.h>
+#include <stdio.h>
 int main()
 {
-	char a[100];
-	char b[] = "Bonjour";
-	size_t size = 3;
-	ft_strlcpy(a,b,size);
-	printf("%s\n", a);
+	int i;
+	i = 52;
+	printf("%s\n", ft_itoa(i));
 	return 0;
-}*/
+}
