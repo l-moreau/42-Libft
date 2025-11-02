@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 11:52:22 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/11/02 12:56:23 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/11/02 13:12:33 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	if (!s)
-		return;
+		return ;
 	i = 0;
 	if (fd != -1)
 	{

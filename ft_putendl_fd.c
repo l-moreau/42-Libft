@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 09:29:54 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/11/02 12:56:21 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/11/02 13:12:42 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putendl_fd(char *s, int fd)
 	int	i;
 
 	if (!s)
-		return;
+		return ;
 	i = 0;
 	if (fd != -1)
 	{
