@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
+/*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 09:46:40 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 13:11:45 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/11/02 13:09:18 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	if (*little == '\0')
 		return ((char *)big);
+	if (len == 0)
+		return (NULL);
 	while (*big != '\0' && len > 0)
 	{
 		s = big;
