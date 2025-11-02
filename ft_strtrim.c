@@ -6,13 +6,13 @@
 /*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 12:57:34 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/11/02 09:35:51 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/11/02 12:45:41 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	exist(char c1, char const *set)
+static bool	exist(char c1, char const *set)
 {
 	size_t	i;
 
@@ -28,24 +28,24 @@ size_t	exist(char c1, char const *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	i;
-	char	*strtrim;
-	size_t	strtrim_len;
+	size_t	start;
+	size_t	end;
+	char	*res;
 
-	i = 0;
-	while (s1[i] && exist(s1[i], set))
-		i++;
-	strtrim_len = ft_strlen(&s1[i]);
-	while (s1[strtrim_len] && exist(s1[strtrim_len], set))
-		strtrim_len--;
-	strtrim = ft_substr(s1, i, strtrim_len - i + 1);
-	return (strtrim);
+	if (!s1 || !set)
+		return (NULL);
+	start = 0;
+	while (s1[start] && exist(s1[start], set))
+		start++;
+	end = ft_strlen(s1);
+	while (end > start && exist(s1[end - 1], set))
+		end--;
+	res = ft_substr(s1, start, end - start);
+	return (res);
 }
 
 // #include <stdio.h>
 // int main()
 // {
-// 	char s1[] = "666bonjour5454";
-// 	char set[] = "54654";
-// 	printf("%s\n", ft_strtrim(s1, set));
+// 	printf("%s\n", ft_strtrim("ab cd  f    ", " "));
 // }

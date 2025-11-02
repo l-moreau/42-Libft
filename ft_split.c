@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 10:26:10 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/11/02 11:36:43 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/11/02 12:45:18 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ static int	ft_count_word(char const *s, char c)
 
 	count = 0;
 	i = 0;
+	flag = 0;
 	while (s[i])
 	{
 		while (s[i] != c && s[i] != '\0')
@@ -67,7 +68,7 @@ static char	*ft_split_word(char **split, char const *s, int len, int i)
 {
 	int	j;
 
-	split[i] = malloc((len + 1) * sizeof(char));
+	split[i] = (char *)malloc((len + 1) * sizeof(char));
 	if (!split[i])
 		return (NULL);
 	j = -1;
@@ -107,7 +108,7 @@ char	**ft_split(char const *s, char c)
 
 // # include <stdio.h>
 // int main() {
-// 	char **split = ft_split("Hello_la_team", '_');
+// 	char **split = ft_split("split  ||this|for|me|||||!|", '|');
 // 	for(int i = 0; split[i]; i++) {
 // 		printf("%s\n", split[i]);
 // 	}

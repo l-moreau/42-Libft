@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 10:46:46 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/11/02 11:38:15 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/11/02 12:23:30 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,8 @@ char	*ft_itoa(int n)
 		nb *= -1;
 	}
 	int_len--;
+	if (nb == 0)
+		str[int_len] = '0';
 	while (nb)
 	{
 		str[int_len] = '0' + (nb % 10);
@@ -63,7 +65,7 @@ char	*ft_itoa(int n)
 // int main()
 // {
 // 	int i;
-// 	i = -2147483648;
+// 	i = 0;
 // 	printf("Answer: %s\n", ft_itoa(i));
 // 	return 0;
 // }
