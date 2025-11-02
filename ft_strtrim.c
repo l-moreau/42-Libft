@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
+/*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 12:57:34 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/30 10:26:37 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/11/02 09:35:51 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,9 @@ size_t	exist(char c1, char const *set)
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
-	size_t	j;
 	char	*strtrim;
 	size_t	strtrim_len;
 
-	j = 0;
 	i = 0;
 	while (s1[i] && exist(s1[i], set))
 		i++;

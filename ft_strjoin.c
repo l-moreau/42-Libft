@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
+/*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 09:35:56 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 13:23:38 by lmoreau          ###   ########.fr       */
+/*   Updated: 2025/11/02 09:35:03 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*res;
-	size_t	cat;
 	size_t	len_s1;
 	size_t	len_s2;
 
@@ -26,8 +25,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	res = malloc(len_s1 + len_s2 + 1);
 	while (!res)
 		return (NULL);
-	cat = ft_strlcat(res, s1, len_s1 + 1);
-	cat = ft_strlcat(res, s2, len_s2 + len_s1 + 1);
+	ft_strlcat(res, s1, len_s1 + 1);
+	ft_strlcat(res, s2, len_s2 + len_s1 + 1);
 	return (res);
 }
 
