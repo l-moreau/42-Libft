@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 11:21:19 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/28 11:49:49 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:45:28 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,24 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-
-// #include <stdio.h>
-
-// void to_switch(unsigned int i, char *c)
-// {
-//     (void)i;
-//     if (*c >= 'A' && *c <= 'Z')
-//         *c += 32;
-// 	else if (*c >= 'a' && *c <= 'z')
-// 		*c -= 32;
-// }
-
-// int main(void)
-// {
-//     char str[] = "BoNjoUr ToI !";
-
-//     printf("Avant : %s\n", str);
-//     ft_striteri(str, to_switch);
-//     printf("Après : %s\n", str);
-//     return 0;
-// }

@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 09:32:19 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 09:34:24 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:44:23 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,3 @@ int	ft_isalpha(int c)
 		return (c);
 	return (0);
 }
-/*#include <stdio.h>
-#include <ctype.h>
-int main()
-{
-	printf("%d\n", ft_isalpha('f'));
-	printf("%d\n", isalpha('f'));
-	return 0;
-}*/

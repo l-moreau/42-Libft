@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 11:28:51 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 13:10:02 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:45:00 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,3 @@ void	*ft_memset(void *s, int c, size_t n)
 		*p++ = (unsigned char)c;
 	return (s);
 }
-/*#include <stdio.h>
-#include <string.h>
-int main()
-{
-	char buffer[20];
-
-	ft_memset(buffer, 'A', sizeof(buffer));
-	buffer[sizeof(buffer) - 1] = '\0';
-	printf("%s\n", buffer);
-	return 0;
-}*/

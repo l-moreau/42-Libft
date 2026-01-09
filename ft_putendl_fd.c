@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
+/*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 09:29:54 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/11/02 13:12:42 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:45:06 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,3 @@ void	ft_putendl_fd(char *s, int fd)
 		write(fd, "\n", 1);
 	}
 }
-// int main()
-// {
-// 	char c[100] = "Coycou";
-// 	int fd;
-// 	fd = open("seal", O_WRONLY);
-// 	ft_putendl_fd(c, fd);
-// 	return 0;
-// }

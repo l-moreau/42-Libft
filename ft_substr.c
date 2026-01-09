@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
+/*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 14:35:28 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/11/02 12:32:23 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:46:01 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	res[j] = '\0';
 	return (res);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	char *result = ft_substr("hola", 7123231, 0);
-// 	if (result)
-// 		printf("%s\n", result);
-// 	return 0;
-// }

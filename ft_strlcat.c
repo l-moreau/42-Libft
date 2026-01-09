@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 11:10:07 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/11/03 09:40:43 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:45:34 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dest_len + i] = '\0';
 	return (dest_len + src_len);
 }
-
-/*#include <stdio.h>
-int main()
-{
-	char dest[100] = "Bonjour";
-	char src[] = "Toiii";
-	size_t len = 9;
-	size_t len_strlcat = ft_strlcat(dest, src, len);
-	printf("%s\n", dest);
-	return 0;
-}*/

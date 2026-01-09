@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
+/*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 10:41:17 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/11/02 11:53:51 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:45:38 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = 0;
 	return (src_len);
 }
-
-/*#include <stdio.h>
-int main()
-{
-	char a[100];
-	char b[] = "Bonjour";
-	size_t size = 3;
-	ft_strlcpy(a,b,size);
-	printf("%s\n", a);
-	return 0;
-}*/

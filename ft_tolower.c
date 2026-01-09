@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 08:00:53 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 09:33:45 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:46:04 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,3 @@ int	ft_tolower(int c)
 		c += 32;
 	return (c);
 }
-
-/*#include <stdio.h>
-int main()
-{
-	int c = 91;
-	printf("%d\n", ft_tolower(c));
-	return 0;
-}*/

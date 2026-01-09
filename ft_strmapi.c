@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 10:22:28 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/28 11:20:05 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:45:45 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,26 +31,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	res[i] = '\0';
 	return (res);
 }
-
-// #include <stdio.h>
-
-// char test_func(unsigned int i, char c)
-// {
-//     if (i % 2 == 0)
-//         return ft_toupper(c);
-//     else
-//         return c;
-// }
-
-// int main(void)
-// {
-//     char *s = "bonjour";
-//     char *res = ft_strmapi(s, test_func);
-
-//     if (res)
-//     {
-//         printf("Original : %s\n", s);
-//         printf("Résultat : %s\n", res);
-//         free(res);
-//     }
-// }

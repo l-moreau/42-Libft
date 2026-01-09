@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 07:46:58 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 09:33:49 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:46:07 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,3 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
-
-/*#include <stdio.h>
-int main()
-{
-	int c;
-	c = 123;
-	printf("%d\n", ft_toupper(c));
-	return 0;
-}*/

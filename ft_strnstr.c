@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
+/*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 09:46:40 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/11/02 13:09:18 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:45:51 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,17 +40,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	const char *text = "Bonjour tout le monde";
-// 	const char *mot = "tout";
-// 	size_t lin = 30;
-// 	char *res = ft_strnstr(text, mot, lin);
-// 	if (res != NULL)
-// 		printf("Trouveee ; %s\n", res);
-// 	else
-// 		printf("Y a pas chef ; %ld\n", lin);
-// 	return 0;
-// }

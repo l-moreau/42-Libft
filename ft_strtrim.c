@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
+/*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 12:57:34 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/11/02 12:45:41 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:45:58 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	res = ft_substr(s1, start, end - start);
 	return (res);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	printf("%s\n", ft_strtrim("ab cd  f    ", " "));
-// }

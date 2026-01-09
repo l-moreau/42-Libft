@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 12:27:12 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/30 11:46:56 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:45:09 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,3 @@ void	ft_putnbr_fd(int n, int fd)
 		}
 	}
 }
-
-// #include <stdio.h>
-
-// int main()
-// {
-//     int fd;
-//     fd = open("seal", O_WRONLY);
-//     ft_putnbr_fd(21, fd);
-// 	return 0;
-// }

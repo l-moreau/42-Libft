@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
+/*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 10:46:46 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/11/02 12:23:30 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:44:39 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,12 +60,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	int i;
-// 	i = 0;
-// 	printf("Answer: %s\n", ft_itoa(i));
-// 	return 0;
-// }

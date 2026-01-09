@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 08:07:39 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 13:10:44 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:45:21 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
-/*#include <stdio.h>
-int main()
-{
-	char s[100] = "Bonjour";
-	int c = 'n';
-	printf("%s\n", ft_strchr(s, c));
-	return 0;
-}*/

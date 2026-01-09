@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 11:09:53 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 13:09:59 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:44:57 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/*#include <stdio.h>
-#include <string.h>
-int main()
-{
-	char str[20] = "Hello, World!";
-	
-	ft_memmove(str + 7, str, 7);
-	printf("%s\n", str);
-
-	return 0;
-}*/

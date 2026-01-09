@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 15:51:58 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/28 09:25:29 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:45:24 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,3 @@ char	*ft_strdup(const char *s)
 	dup[i] = '\0';
 	return (dup);
 }
-
-// # include <stdio.h>
-// int main() {
-// 	char *a = "salut";
-// 	char *b = ft_strdup(a);
-// 	if (!b) {
-// 		printf("malloc failed\n");
-// 		return 1;
-// 	}
-// 	printf("%s\n", b);
-// 	b[0] = 'c';
-// 	printf("%s\n", b);
-// 	free(b);
-// 	return 0;
-// }

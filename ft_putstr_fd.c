@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
+/*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 11:52:22 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/11/02 13:12:33 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:45:12 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,3 @@ void	ft_putstr_fd(char *s, int fd)
 		}
 	}
 }
-
-// int main()
-// {
-// 	char c[100] = "Helloooo";
-// 	int fd;
-// 	fd = open("seal", O_WRONLY);
-// 	ft_putstr_fd(c, fd);
-// 	return 0;
-// }

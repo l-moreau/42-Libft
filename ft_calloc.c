@@ -6,7 +6,7 @@
 /*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 09:32:03 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/10/27 13:09:06 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:44:12 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(new, nmemb * size);
 	return (new);
 }
-
-// #include <stdio.h>
-// int main() {
-// 	char *a = (char *) ft_calloc(5, sizeof(char));
-// 	if (!a)
-// 		return 1;
-// 	a[0] = 'c';
-// 	printf("%c\n", a[0]);
-// 	return 0;
-// }

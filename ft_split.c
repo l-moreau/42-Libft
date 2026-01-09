@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
+/*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 10:26:10 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/11/02 12:45:18 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:45:18 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,12 +105,3 @@ char	**ft_split(char const *s, char c)
 	split[i] = NULL;
 	return (split);
 }
-
-// # include <stdio.h>
-// int main() {
-// 	char **split = ft_split("split  ||this|for|me|||||!|", '|');
-// 	for(int i = 0; split[i]; i++) {
-// 		printf("%s\n", split[i]);
-// 	}
-// 	return 0;
-// }

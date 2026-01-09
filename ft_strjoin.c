@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lmoreau <lmoreau@student.s19.be>           +#+  +:+       +#+        */
+/*   By: lmoreau <lmoreau@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 09:35:56 by lmoreau           #+#    #+#             */
-/*   Updated: 2025/11/02 12:07:52 by lmoreau          ###   ########.fr       */
+/*   Updated: 2026/01/09 10:45:31 by lmoreau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(res, s2, len_s2 + len_s1 + 1);
 	return (res);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-//     printf("%s\n", ft_strjoin("", ""));
-//     return 0;   
-// }
