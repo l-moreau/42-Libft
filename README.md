@@ -9,7 +9,7 @@
 In this project we need to create our own library of utility functions, so that we can reuse them in future projects.
 
 
-❌ **WITHOUT THE BONUS PART**
+✅  **WITH THE BONUS PART**
 
 <br>
 
